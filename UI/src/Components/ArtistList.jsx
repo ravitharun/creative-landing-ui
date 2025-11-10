@@ -6,9 +6,7 @@ export default function ArtistList({ artists, current, setCurrent, handleHover }
           key={i}
           onClick={() => setCurrent(i)}
           onMouseEnter={handleHover}
-          className={`cursor-pointer transition-all ${
-            current === i ? "text-pink-400 scale-110" : "opacity-60"
-          }`}
+          className={`cursor-pointer transition-all ${current === i ? "text-pink-400 scale-110" : "opacity-60"}`}
         >
           {name}
         </div>
